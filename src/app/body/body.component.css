@@ -1,0 +1,283 @@
+.big-div {
+    width: auto;
+    height: auto;
+    border: 1px solid rgb(46, 45, 45);
+    border: none;
+    padding: 10px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* border-radius: 10px; */
+    /* background: #00b4b3; */
+    /* width: 80%;
+      max-height: 4000px;
+      margin: 0 auto; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  
+  
+  }
+  
+  .small-div {
+    width: 275px;
+    height: 300px;
+    border: 1px solid grey;
+    margin: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(214, 210, 210, 0.5);
+    border: none;
+  }
+  
+  .small-div p {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .small-div img {
+    width: 100%;
+    height: 65%;
+    display: block;
+    border-radius: 10px 10px 0px 0px;
+  }
+  
+  
+  .category {
+    border: 1px solid black;
+    height: 30px;
+  }
+  
+  
+  /* .big-div h2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 10px;
+      background-color: #fff;
+    } */
+  
+  
+  /* .big-div h2{
+      border: 2px solid black;
+      width: none;
+      height: 20px;
+    } */
+  
+  .small-div:hover {
+    box-shadow: 0 0 10px rgba(170, 170, 172, 0.705);
+    opacity: 90%;
+    cursor: pointer;
+  }
+  
+  .whole-div {
+    box-shadow: 0 0 10px rgba(214, 215, 218, 0.849);
+    width: 88%;
+    margin: 0 auto;
+  }
+  
+  .big-div-texts {
+    font-size: 21px;
+    padding-left: 25px;
+    padding-top: 18px;
+    margin-bottom: -8px;
+  }
+  
+  .small-div {
+    position: relative;
+  }
+  
+  .date-time {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+    font-style: italic;
+    font-size: 12px;
+    
+  }
+  
+  .date {
+    text-align: left;
+    padding-left: 10px;
+    font-weight: 1000px;
+    margin-top: 11px;
+    
+  
+  }
+  /* a:link{
+      display: inline-block;
+      margin: 0;
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    } */
+  
+    .popup {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0);
+    }
+    
+    .popup-content {
+      background-color:  rgba(0,0,0,0);
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 600px;
+    }
+    
+    .popup-content .close {
+      /* color: #aaaaaa; */
+      background-color: rgba(0,0,0,0) !important;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+    
+    .popup-content .close:hover,
+    .popup-content .close:focus {
+      /* color: #000000; */
+      background-color: rgba(0,0,0,0) !important;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    
+  
+    /* Modal */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0) !important; /* Black w/ opacity */
+  }
+  
+  .modal-open {
+    display: block; /* Display the modal */
+    background-color: rgba(0,0,0,0.2) !important;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin: -16p
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  .form-container {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #3B3770;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgb(46, 45, 45);
+  }
+  
+  button[routerLink="/upload"] {
+    display: flex;
+    margin-top: 10px;
+    margin-left: auto;
+    padding: 5px 10px;
+    background-color: #16283b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  
+  button[routerLink="/upload"]:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .subheader-li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  button[routerLink="/upload"] {
+    margin-left: auto;
+    background-color: rgb(46, 45, 45);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 20px;
+    padding: 5px 10px;
+    margin-right: 20px;
+  }
+  
+  
+  .date-time .editicon{
+    width: 18px;
+    padding-right: 5px;
+    height: 18px;
+    margin-bottom: 2px;
+    padding-top: 8px
+  
+  }
+  
+  

@@ -1,0 +1,23 @@
+footer {
+    background-color: #e7e2e2;
+    padding: 20px;
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  .footer-menu {
+    display: inline-block;
+  }
+  
+  .footer-menu span {
+    margin-left: 20px;
+  }
+
+  .footer-menu:hover{
+    cursor: pointer;
+  }
+
+  .footer-menu span:hover{
+    background: rgb(187, 183, 183);
+    border-radius: 5px;
+  }
